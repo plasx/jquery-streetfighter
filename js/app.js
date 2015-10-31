@@ -4,12 +4,12 @@ $(document).ready(function(){
 		$('.ryu-ready').show();
 	});
 
-	$('.ryu').mouseleave(function(){
+			 .mouseleave(function(){ //chained from the first one $('.ryu').
 		$('.ryu-ready').hide();
 		$('.ryu-still').show();
 	});
 
-	$('.ryu').mousedown(function(){
+			 .mousedown(function(){
 		console.log('mousedown');
 		$('.ryu-ready').hide();
 		$('.ryu-throwing').show();
@@ -17,7 +17,7 @@ $(document).ready(function(){
 		//play hadouken sfx
 		//shw hadouken n animate
 	})
-	$('.ryu').mouseup(function(){
+			 .mouseup(function(){
 		console.log('mouseup');
 		// ryu goes back to his ready position
 		$('.ryu-thorwing').hide();
